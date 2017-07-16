@@ -1,3 +1,7 @@
 /TCC/Library/*.log
 Build
 Temp
+/TCC/.vs/*
+ShaderCache
+*.log
+*.txt
