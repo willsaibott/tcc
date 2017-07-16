@@ -1,3 +1,8 @@
 /TCC/Library/*.log
 Build
 Temp
+/TCC/Library/assetDatabase3
+/TCC/Library/*.txt
+/TCC/Library/CrashedAssetImports.txt
+*.log
+*.txt
