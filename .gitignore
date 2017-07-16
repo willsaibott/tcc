@@ -5,3 +5,8 @@ Temp
 ShaderCache
 *.log
 *.txt
+/TCC/Library/assetDatabase3
+/TCC/Library/*.txt
+/TCC/Library/CrashedAssetImports.txt
+*.log
+*.txt
