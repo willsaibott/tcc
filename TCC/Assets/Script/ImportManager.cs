@@ -1,9 +1,9 @@
 ﻿using System.Windows.Forms;
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 
 public class ImportManager : MonoBehaviour {
-    private GameObject importedObject;
+    public GameObject importedObject;
     private const string USER_DIRECTORY = "%HOMEPATH%";
 	// Use this for initialization
 	void Start () {
@@ -44,6 +44,8 @@ public class ImportManager : MonoBehaviour {
         if (path == "") {
             code = Errors.ON_IMPORT_PATH_EMPTY;
         } else {
+            GameObject obj = OBJLoader.LoadOBJFile(path);
+            obj.transform.parent = importedObject.transform;
         }
         return code;
     }
